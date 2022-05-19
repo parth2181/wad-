@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Jquery Mobile</title>
+</head>
+<body>
+    <section data-role="page" id="one">
+        <div data-role="header">
+            <h1>My CV</h1>
+        </div>
+
+        <div data-role="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam delectus distinctio adipisci itaque illum nulla iste, obcaecati minus consequatur assumenda, quisquam ipsum impedit perspiciatis ullam expedita? Fugit, eaque facere!</p>  
+          <ul data-role="listview">
+              <li><a href="">Details</a> </li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="">Work Experience</a></li>
+              <li><a href="">Reference</a></li>
+             
+          </ul>
+        </div>
+           <a href="#two" data-role="content"><button data-icon="arrow-r">Go to next page</button></a>
+        <div data-role="footer">
+            <h4>Parth Jadhav</h4>
+        </div>
+    </section>
+
+        <section data-role="page" id="education">
+            <div data-role="header">
+                <h1>Education</h1>
+            </div>
+    
+            <div data-role="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam delectus distinctio adipisci itaque illum nulla iste, obcaecati minus consequatur assumenda, quisquam ipsum impedit perspiciatis ullam expedita? Fugit, eaque facere!</p>  
+            </div>
+            <p><a href="#one">GO back</a></p>
+            <div data-role="footer">
+                <h4>end of page</h4>
+            </div>
+        </section>
+</body>
+</html>
