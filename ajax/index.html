@@ -1,0 +1,38 @@
+<html>
+    <body>
+    <div>
+    Hello Friends <br>
+    Welcome to Pune!!!!!<br>
+    <button type="button" onclick="load()">
+    Submit
+    </button>
+    </div>
+    <p id="xyz"></p>
+ <script>
+ function load(){
+ var req=new XMLHttpRequest()
+ req.onreadystatechange=function() {
+ if(this.readyState == 4 && this.status == 200){
+ 
+ document.getElementById("xyz").innerHTML=this.responseText
+ }
+ }
+ req.open('GET','data.txt',true)
+ req.send()
+ }
+ //post method
+ function  ajaxfunction(){
+ var ajax=new XMLHttpRequest()
+ajax.onreadystatechange=function() {
+ if(this.readyState == 4 && this.status == 200){
+ 
+ alert(this.responseText)
+ }
+ ajax.open('POST','data.txt',true)
+ ajax.send()
+}
+ }
+ </script>
+ <button onclick="ajaxfunction()">Call Ajax</button>
+ </body>
+</html>
